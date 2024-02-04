@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>최기연의 웹사이트</title>
     <link href="./practice.css" rel="stylesheet" type="text/css" />
+    <script src="./current_time.js"></script>
+    <script src="./add.js"></script>
   </head>
   <body>
     <nav>
@@ -18,6 +20,21 @@
       안녕하세요 저는 최기연입니다. 앞으로 저는 저만의 웹사이트를 만들것입니다.
       모두 응원해 주세요!
     </p>
+
+    <hr />
+    <h3>한번 간단한 덧셈 계산기를 만들어 볼까요?</h3>
+
+    <label for="valueA">a</label>
+    <input id="valueA" type="number" value="1" onkeyup="count()" />
+
+    <label for="valueB">b</label>
+    <input id="valueB" type="number" value="2" onkeyup="count()" />
+
+    <p><span id="a">a</span> + <span id="b">b</span> = <span id="c">c</span></p>
+    <hr />
+    <h3>지금은 몇시일까요?</h3>
+    <button onclick="time()">Time</button>
+
     <hr />
     <img src="./images/neom-nEDEGCXh6VU-unsplash.jpg" width="600px" />
   </body>
